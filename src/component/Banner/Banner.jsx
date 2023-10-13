@@ -1,12 +1,12 @@
 import React from 'react';
 import image1 from './../../assets/banner1.png'
-import image2 from './../../assets/banner2.png'
+import image2 from './../../assets/banner2.png';
 import image3 from './../../assets/banner3.png'
 import './Banner.css'
 
 const Banner = () => {
   return (
-    <div className='flex flex-col lg:flex-row gap-2 md:gap-4 lg:gap-8'>
+    <div className='flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-8'>
       <div className='flex flex-col justify-center w-full lg:w-11/12 '>
         <h3 className='text-xl md:text-3xl lg:text-6xl headLine-font'>
           Find{' '}
@@ -15,7 +15,7 @@ const Banner = () => {
           </span>{' '}
           (CAs) available online
         </h3>
-        <p className='mt-2 md:mt-3 lg:mt-4 text-slate-600 '>
+        <p className='mt-2 md:mt-3 lg:mt-4 text-[#616161] '>
           <span className='uppercase font-semibold'>Connect</span> with us where
           your services are listed and visible to a myriad of businesses seeking
           CA&apos;s for compliance support.
@@ -24,14 +24,14 @@ const Banner = () => {
           <input
             type='text'
             placeholder='Search by name'
-            className='relative rounded-lg px-4 md:px-8 py-2 lg:py-7 text-xl text-[#AEB0B4] border-2 border-[#BFBFBF]  w-8/12 lg:w-8/12'
+            className='relative rounded-lg px-4 md:px-8 py-2 lg:py-7 text-xl text-[#AEB0B4] border-2 border-[#BFBFBF] w-8/12 md:w-8/12 lg:w-8/12'
           />
-          <button className='absolute  bg-[#0076CE] text-xl border-2 border-gray-300 text-white rounded-lg -ml-8 px-4 md:px-16 py-2 lg:py-7 text-center'>
+          <button className='absolute  bg-[#0076CE] text-xl border-2 border-gray-300 text-white rounded-lg -ml-8 px-4 md:px-12 lg:px-16 py-2 lg:py-7 text-center'>
             Search
           </button>
         </div>
       </div>
-      <div className='flex md:gap-2 lg:gap-4 w-full lg:w-11/12 '>
+      <div className='flex md:gap-2 lg:gap-4 md:justify-center w-full lg:w-11/12 '>
         <div className='lg:mt-[17%]'>
           <img src={image1} alt='' />
         </div>

@@ -1,11 +1,15 @@
 import React from 'react';
-import Banner from './Banner';
+import Banner from './../Banner/Banner';
+import CardSection from './../CardSection/CardSection';
+import AllinOne from './../AllinOne/AllinOne';
+
 
 const Home = () => {
   return (
     <div>
       <Banner/>
-      home
+      <CardSection/>
+      <AllinOne/>
     </div>
   );
 };
