@@ -41,9 +41,18 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: '/cardDetails/:id',
+        path: 'cardDetails/:id',
         element: <CardDetails />,
+        loader: ({ params }) =>
+          fetch('/data.json')
       },
+      // {
+      //   path: '/cardDetails/:id',
+      //   element: <InfoCard/>,
+      //   loader: ({ params }) => fetch('data.json').then(res=>res.json()).then(data=>{
+      //     console.log(data)
+      //   })
+      // }
     ],
   },
 ]);

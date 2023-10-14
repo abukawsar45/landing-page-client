@@ -3,7 +3,7 @@ import './SingleCard.css'
 import { Link } from 'react-router-dom';
 
 const SingleCard = ({item}) => {
-  console.log(item);
+  // console.log(item);
   const { id, about, deliveryTime, image, intro, name, price, rating, reviewCount, taskComplexity, testimonial } = item || {};
   // console.log( deliveryTime)
   return (

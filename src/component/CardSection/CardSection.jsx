@@ -20,6 +20,8 @@ const CardSection = () => {
         setGetData(data);
       });
   }, []);
+
+  
   return (
     <div
       style={backgroundImageStyle}
