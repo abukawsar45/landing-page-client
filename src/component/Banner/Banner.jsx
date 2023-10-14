@@ -6,7 +6,7 @@ import './Banner.css'
 
 const Banner = () => {
   return (
-    <div className='flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-8'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4 lg:gap-8'>
       <div className='flex flex-col justify-center w-full lg:w-11/12 '>
         <h3 className='text-xl md:text-3xl lg:text-6xl headLine-font'>
           Find{' '}
