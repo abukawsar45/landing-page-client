@@ -26,7 +26,7 @@ const Banner = () => {
             placeholder='Search by name'
             className='relative rounded-lg px-4 md:px-8 py-2 lg:py-7 text-xl text-[#AEB0B4] border-2 border-[#BFBFBF] w-8/12 md:w-8/12 lg:w-8/12'
           />
-          <button className='absolute  bg-[#0076CE] text-xl border-2 border-gray-300 text-white rounded-lg -ml-8 px-4 md:px-12 lg:px-16 py-2 lg:py-7 text-center'>
+          <button className='absolute  bg-[#0076CE] text-xl border-2 border-[#0076CE] text-white rounded-lg -ml-8 px-4 md:px-12 lg:px-16 py-2 lg:py-7 text-center'>
             Search
           </button>
         </div>

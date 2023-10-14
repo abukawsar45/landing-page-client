@@ -21,7 +21,7 @@ const AllinOne = () => {
      };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 lg:gap-8'>
+    <div className='flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 lg:gap-8 px- 2 md:px-8 lg:px-32 '>
       <div className='flex flex-col justify-center w-full  '>
         <h3 className='text-xl md:text-3xl lg:text-6xl headLine-font'>
           <span className='font-semibold  text-transparent bg-clip-text bg-gradient-to-br from-[#0076CE] to-[#9400D3] '>
@@ -100,7 +100,7 @@ const AllinOne = () => {
             />
           </div>
         </div>
-        <div className='flex mt-2 md:mt-4 lg:mt-6'>
+        <div className='flex mt-2 md:mt-4 lg:mt-12'>
           <div>
             <img
               style={backgroundImageStyle2}

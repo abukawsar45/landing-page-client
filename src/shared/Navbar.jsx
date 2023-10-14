@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ActiveLink from './../utils/ActiveLink/ActiveLink';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import navlogo from './../assets/navlogo.png'
 
 const Navbar = () => {
   const user = false;
@@ -9,17 +10,19 @@ const Navbar = () => {
   const navData = (
     <>
       <li onClick={() => setShowNavLinks(!showNavLinks)}>
-        <Link to='/'>Logoipsum</Link>
+        <Link to='/'>
+          <img src={navlogo} alt={navlogo} className='text-black'/>
+        </Link>
       </li>
 
-      <li onClick={() => setShowNavLinks(!showNavLinks)}>
-        <ActiveLink to='/solutions'>Solutions</ActiveLink>
+      <li className='font-bold' onClick={() => setShowNavLinks(!showNavLinks)}>
+        <ActiveLink  to='/solutions'>Solutions</ActiveLink>
       </li>
-      <li onClick={() => setShowNavLinks(!showNavLinks)}>
-        <ActiveLink to='/features'>Features</ActiveLink>
+      <li className='font-bold' onClick={() => setShowNavLinks(!showNavLinks)}>
+        <ActiveLink  to='/features'>Features</ActiveLink>
       </li>
-      <li onClick={() => setShowNavLinks(!showNavLinks)}>
-        <ActiveLink to='/about'> About</ActiveLink>
+      <li className='font-bold' onClick={() => setShowNavLinks(!showNavLinks)}>
+        <ActiveLink  to='/about'> About</ActiveLink>
       </li>
    
       {!user && (
