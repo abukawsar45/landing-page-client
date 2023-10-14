@@ -3,8 +3,8 @@ import { BsSearch, BsPeopleFill } from 'react-icons/bs';
 import { GiArchiveResearch, GiGraduateCap } from 'react-icons/gi';
 import student from './../../assets/student.png';
 import teacher from './../../assets/teacher.png';
-import studentBg from './../../assets/studentBg.png'
-import teacherBg from './../../assets/teacherBg.png'
+import studentBg from './../../assets/studentBg.png';
+import teacherBg from './../../assets/teacherBg.png';
 
 
 const AllinOne = () => {

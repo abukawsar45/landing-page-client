@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useParams, Link } from 'react-router-dom';
 import { GiAlliedStar, GiCalendar } from 'react-icons/gi';
 import { BsCalendarDay } from 'react-icons/bs';
 import RecommendedCard from './../RecommendedCard/RecommendedCard';
@@ -55,6 +55,14 @@ const CardDetails = () => {
 
   return (
     <div className=' md:my-36 px-2 md:px-4 lg:px-12 my-20 lg:mt-48 lg:mb-32  '>
+      <div className='mb-4'>
+        <Link
+          to='/'
+          className='my-4 px-4 py-2 text-xl bg-lime-400 hover:bg-lime-500 rounded-lg font-semibold hover:text-white'
+        >
+          Home
+        </Link>
+      </div>
       <div>
         <div className='grid  grid-cols-12 gap-3 md:gap-5 lg:gap-8'>
           <div className='col-span-12 md:col-span-5'>

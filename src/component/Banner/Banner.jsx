@@ -1,8 +1,8 @@
 import React from 'react';
-import image1 from './../../assets/banner1.png'
+import image1 from './../../assets/banner1.png';
 import image2 from './../../assets/banner2.png';
-import image3 from './../../assets/banner3.png'
-import './Banner.css'
+import image3 from './../../assets/banner3.png';
+import './Banner.css';
 
 const Banner = ({handleSearchBox}) => {
   return (

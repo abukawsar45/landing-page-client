@@ -1,29 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import SingleCard from './../SingleCard/SingleCard';
 import vectorbg from './../../assets/vectorbg.png';
-import loading from './../../assets/loading.gif'
+import loading from './../../assets/loading.gif';
 import Banner from './../Banner/Banner';
-
 
 const CardSection = () => {
   const [getData, setGetData] = useState([]);
   const [loadingTime, setLoadingTime] = useState(false);
   // console.log(getData);
 
-    const handleSearchBox = (e) => {
-      e.preventDefault();
-       setLoadingTime(true);
-      const searchValue = e.target.searchName.value;
-      fetch(
-        `https://user-info-data-server.vercel.app/userby/${searchValue}`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          setGetData(data);
-          //console.log(data);
-           setLoadingTime(false);
-        });
-    };
+  const handleSearchBox = (e) => {
+    e.preventDefault();
+    setLoadingTime(true);
+    const searchValue = e.target.searchName.value;
+    fetch(`https://user-info-data-server.vercel.app/userby/${searchValue}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setGetData(data);
+        //console.log(data);
+        setLoadingTime(false);
+      });
+  };
 
   const backgroundImageStyle = {
     backgroundImage: `url(${vectorbg})`,
@@ -42,7 +39,6 @@ const CardSection = () => {
       });
   }, []);
 
-  
   return (
     <div style={backgroundImageStyle} className='px-2 md:px-4 lg:px-12 my-16 '>
       <Banner handleSearchBox={handleSearchBox} />
@@ -82,7 +78,7 @@ const CardSection = () => {
                 No matching data found. Please try again.
               </p>
             ) : (
-              <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-5 lg:gap-8'>
+              <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-5 lg:gap-8 '>
                 {getData.map((item) => (
                   <SingleCard key={item._id} item={item} />
                 ))}
