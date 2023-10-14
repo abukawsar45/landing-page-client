@@ -8,14 +8,14 @@ import RecommendedCard from './../RecommendedCard/RecommendedCard';
 const CardDetails = () => {
   const [getCardData, setGetCardData] = useState({});
   const [withoutCard, setWithoutCard] = useState([]);
-  console.log(withoutCard);
+  // console.log(withoutCard);
   const getData = useLoaderData();
   // console.log(getData);
   const {id: searchId} = useParams();
-  console.log(searchId);
+  // console.log(searchId);
 
    const [selectedCard, setSelectedCard] = useState(false);
-   console.log(selectedCard);
+  //  console.log(selectedCard);
 
    // ...
 
@@ -50,7 +50,7 @@ const CardDetails = () => {
     const withoutSpecificCard = getData.filter((card) => card.id != searchId);
     setWithoutCard(withoutSpecificCard);
     // console.log(withoutSpecificCard)
-  }, [selectedCard]);
+  }, [selectedCard, searchId]);
 
 
   return (

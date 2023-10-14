@@ -33,13 +33,13 @@ const Banner = () => {
       </div>
       <div className='flex md:gap-2 lg:gap-4 md:justify-center w-full lg:w-11/12 '>
         <div className='lg:mt-[17%]'>
-          <img src={image1} alt='' />
+          <img src={image1} alt={image1} />
         </div>
         <div>
-          <img src={image2} alt='' className='lg:mb-[17%]' />
+          <img src={image2} alt={image2} className='lg:mb-[17%]' />
         </div>
         <div>
-          <img src={image3} alt='' className='lg:mt-[9%] lg:mb-[9%]' />
+          <img src={image3} alt={image3} className='lg:mt-[9%] lg:mb-[9%]' />
         </div>
       </div>
     </div>
