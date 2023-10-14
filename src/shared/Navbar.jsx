@@ -52,7 +52,10 @@ const Navbar = () => {
     </>
   );
   return (
-    <div data-aos='fade-down' className='bg-base-100 my-2 md:my-4'>
+    <div
+      data-aos='fade-down'
+      className='bg-base-100 md:w-full  z-10 fixed py-4 top-0 transition-colors duration-300 ease-in bg-transparent  md:backdrop-blur md:h-16 px-2 md:px-4 lg:px-12 '
+    >
       <div className='md:hidden'>
         <label tabIndex={0} className=' md:hidden '>
           <svg
@@ -81,9 +84,9 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className='hidden md:flex justify-between items-center md:mx-4 lg:mx-8'>
+      <div className='hidden md:flex justify-between items-center '>
         <div className=''>
-          <ul className='flex items-center gap-4 lg:gap-8 px-1'>{navData}</ul>
+          <ul className='flex items-center gap-4 lg:gap-8'>{navData}</ul>
         </div>
         <div className=''>
           {!user && (

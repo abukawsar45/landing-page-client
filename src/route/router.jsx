@@ -44,15 +44,8 @@ const router = createBrowserRouter([
         path: 'cardDetails/:id',
         element: <CardDetails />,
         loader: ({ params }) =>
-          fetch('/data.json')
+          fetch('https://user-info-data-server.vercel.app/allusers'),
       },
-      // {
-      //   path: '/cardDetails/:id',
-      //   element: <InfoCard/>,
-      //   loader: ({ params }) => fetch('data.json').then(res=>res.json()).then(data=>{
-      //     console.log(data)
-      //   })
-      // }
     ],
   },
 ]);

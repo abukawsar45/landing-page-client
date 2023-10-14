@@ -6,10 +6,10 @@ import AllinOne from './../AllinOne/AllinOne';
 
 const Home = () => {
   return (
-    <div>
-      <Banner/>
-      <CardSection/>
-      <AllinOne/>
+    <div className='px-2 md:px-4 lg:px-12 my-20 lg:mt-48 lg:mb-32 '>
+      {/* <Banner /> */}
+      <CardSection />
+      <AllinOne />
     </div>
   );
 };

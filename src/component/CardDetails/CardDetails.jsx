@@ -21,7 +21,7 @@ const CardDetails = () => {
 
 
   const {
-    id,
+    _id,
     about,
     deliveryTime,
     image,
@@ -45,18 +45,18 @@ const CardDetails = () => {
 
   useEffect(() => {
     setWithoutCard(true);
-    const specificCard = getData.find((card) => card.id == searchId);
+    const specificCard = getData.find((card) => card._id == searchId);
     setGetCardData(specificCard);
-    const withoutSpecificCard = getData.filter((card) => card.id != searchId);
+    const withoutSpecificCard = getData.filter((card) => card._id != searchId);
     setWithoutCard(withoutSpecificCard);
     // console.log(withoutSpecificCard)
   }, [selectedCard, searchId]);
 
 
   return (
-    <div className='my-4 md:my-8 lg:my-20'>
+    <div className=' md:my-36 px-2 md:px-4 lg:px-12 my-20 lg:mt-48 lg:mb-32  '>
       <div>
-        <div className='grid grid-cols-12 gap-3 md:gap-5 lg:gap-8'>
+        <div className='grid  grid-cols-12 gap-3 md:gap-5 lg:gap-8'>
           <div className='col-span-12 md:col-span-5'>
             <div>
               <h3 className='text-4xl font-bold'>{name}</h3>
@@ -174,7 +174,7 @@ const CardDetails = () => {
           <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-8'>
             {withoutCard?.slice(0, 3)?.map((item) => (
               <RecommendedCard
-                key={item.id}
+                key={item._id}
                 setSelectedCard={setSelectedCard}
                 selectedCard={selectedCard}
                 item={item}
