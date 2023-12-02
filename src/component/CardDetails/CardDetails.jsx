@@ -14,12 +14,6 @@ const CardDetails = () => {
   const {id: searchId} = useParams();
   // console.log(searchId);
 
-   const [selectedCard, setSelectedCard] = useState(false);
-  //  console.log(selectedCard);
-
-   // ...
-
-
   const {
     _id,
     about,
@@ -50,7 +44,7 @@ const CardDetails = () => {
     const withoutSpecificCard = getData.filter((card) => card._id != searchId);
     setWithoutCard(withoutSpecificCard);
     // console.log(withoutSpecificCard)
-  }, [selectedCard, searchId]);
+  }, [ searchId]);
 
 
   return (
@@ -183,8 +177,6 @@ const CardDetails = () => {
             {withoutCard?.slice(0, 3)?.map((item) => (
               <RecommendedCard
                 key={item._id}
-                setSelectedCard={setSelectedCard}
-                selectedCard={selectedCard}
                 item={item}
               />
             ))}

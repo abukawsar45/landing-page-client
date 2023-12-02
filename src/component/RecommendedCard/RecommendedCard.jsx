@@ -2,7 +2,7 @@ import React from 'react';
 import { GiAlliedStar } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 
-const RecommendedCard = ({ item, setSelectedCard, selectedCard }) => {
+const RecommendedCard = ({ item }) => {
   // console.log(item);
   const {
     _id,
@@ -48,7 +48,6 @@ const RecommendedCard = ({ item, setSelectedCard, selectedCard }) => {
         <div className='mt-3 md:mt-6 lg:mt-8 mb-3 md:mb-4 lg:mb-5 '>
           <Link to={`/cardDetails/${_id}`}>
             <button
-              onClick={() => setSelectedCard(!selectedCard)}
               className='w-full py-2 bg- text-white bg-[#0076CE] hover:bg-blue-800 rounded-lg '
             >
               View services
